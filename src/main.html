@@ -9,17 +9,43 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <!-- FONTS -->
+   <!-- Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet"></head>
+<body class="bg-cream">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <div class="flex items-center justify-center h-screen">
+        <div class="bg-white md:w-[40vw] w-[95vw] md:h-[60vh] h-[98vh] rounded-2xl shadow-sm grid md:grid-cols-2 overflow-hidden">
+            <div class="w-full h-full">
+                <img src="/images/image-product-desktop.jpg" alt="" class="w-full md:h-full h-1/2 object-cover">
+            </div>
+            <div class="md:m-8 mx-6 -mt-[250px]">
+                <h1 class="tracking-[7px] text-paragraph font-[Montserrat]">PERFUME</h1>
+                <h2 class="mt-5 font-[Fraunces] text-[28px] font-extrabold tracking-[0.2rem]  text-very-dark-blue leading-[1] ">  Gabrielle Essence Eau De Parfum</h2>
+                <p class="font-[montserrat] text-paragraph mt-6 text-dark-grayish-blue">  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
 
+                <div class="grid grid-cols-2">
+                    <h3 class="font-[fraunces] text-3xl font-bold text-dark-green mt-6">$149.99</h3>
+                    <p class="m-[30px] font-[montserrat] line-through text-dark-grayish-blue">$169.99</p>
+                </div>
 
-
+                <div class="flex justify-center -mx-8">
+                    <button class="md:bg-green-900 bg-dark-green md:px-[60px] px-[100px] py-3 rounded-xl flex">
+                        <svg class="mt-1" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+                        <h2 class="text-white px-2">Add to Cart</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
 </body>
 </html>
